@@ -27,9 +27,9 @@ Autres projets
 📂 Structure du dépôt
 
 - `index.html` → Page principale de ton portfolio  
-- `css/` → Styles CSS  
-- `js/` → Scripts JavaScript  
-- `assets/` → Images et médias  
+- `assets/css/` → Styles CSS  
+- `assets/js/` → Scripts JavaScript  
+- `images/` → Images et médias  
 
 📫 Contact
 
