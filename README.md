@@ -29,7 +29,7 @@ Autres projets
 - `index.html` → Page principale de ton portfolio  
 - `css/` → Styles CSS  
 - `js/` → Scripts JavaScript  
-- `images/` → Images et médias  
+- `assets/` → Images et médias  
 
 📫 Contact
 
