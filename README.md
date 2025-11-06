@@ -5,7 +5,7 @@ Ce site présente mes projets, compétences et réalisations en développement w
 
 ## 🚀 À propos de moi
 
-Je suis étudiant en cycle ingénieur IA et Big Data à CESI Paris. Passionné par la technologie, le développement web et les projets innovants, je crée des solutions pratiques et esthétiques pour partager mes compétences et expériences.
+Je suis étudiant en cycle ingénieur Sciences du numérique à CESI Paris. Passionné par la technologie, le développement web et les projets innovants, je crée des solutions pratiques et esthétiques pour partager mes compétences et expériences.
 
 ## 🛠 Technologies utilisées
 
