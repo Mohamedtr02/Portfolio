@@ -1068,6 +1068,32 @@
       color: var(--gray-color);
     }
 
+    .contact-details a {
+      color: var(--primary-color);
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .contact-details a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    .contact-details a:hover {
+      color: var(--secondary-color);
+    }
+
+    .contact-details a:hover::after {
+      width: 100%;
+    }
+
     .contact-form .form-group {
       margin-bottom: 20px;
     }
@@ -1141,6 +1167,7 @@
     .social-links {
       display: flex;
       gap: 15px;
+      margin-top: 15px;
     }
 
     .social-link {
@@ -1152,11 +1179,36 @@
       align-items: center;
       justify-content: center;
       transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .social-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+      transform: scale(0);
+      border-radius: 50%;
+      transition: var(--transition);
+      z-index: -1;
+    }
+
+    .social-link:hover::before {
+      transform: scale(1);
     }
 
     .social-link:hover {
-      background: var(--primary-color);
       transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+    }
+
+    .social-link i {
+      position: relative;
+      z-index: 1;
     }
 
     .copyright {
@@ -1354,6 +1406,7 @@
         <div class="hero-btns">
           <a href="#portfolio" class="btn">Voir mon travail</a>
           <a href="#contact" class="btn btn-outline">Me contacter</a>
+          <a href="https://www.linkedin.com/in/traore-zie-mohamed-lamine" class="btn btn-outline" target="_blank">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -1389,7 +1442,7 @@
                 <p>Structuration et modélisation de données</p>
               </div>
             </div>
-            
+
             <div class="skill-item">
               <div class="skill-icon">
                 <i class="fas fa-lightbulb"></i>
@@ -1399,7 +1452,7 @@
                 <p>Analyse et optimisation</p>
               </div>
             </div>
-            
+
             <div class="skill-item">
               <div class="skill-icon">
                 <i class="fas fa-code"></i>
@@ -1409,7 +1462,7 @@
                 <p>Python, SQL, web et algorithmes</p>
               </div>
             </div>
-            
+
             <div class="skill-item">
               <div class="skill-icon">
                 <i class="fas fa-chart-bar"></i>
@@ -1419,6 +1472,12 @@
                 <p>Excel, Word et PowerPoint</p>
               </div>
             </div>
+          </div>
+
+          <div class="hero-btns" style="margin-top: 25px;">
+            <a href="https://www.linkedin.com/in/traore-zie-mohamed-lamine" class="btn" target="_blank">
+              <i class="fab fa-linkedin"></i> Connectez-vous avec moi sur LinkedIn
+            </a>
           </div>
         </div>
       </div>
@@ -1739,10 +1798,10 @@
             </div>
             <div class="contact-details">
               <h3>Email</h3>
-              <p>ziemohamedlamine.traore@viacesi.fr</p>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="760c1f131b191e171b13121a171b1f18135802041719041336001f171513051f581004">[email&#160;protected]</a></p>
             </div>
           </div>
-          
+
           <div class="contact-item">
             <div class="contact-icon">
               <i class="fas fa-phone"></i>
@@ -1752,7 +1811,27 @@
               <p>+33 780709636</p>
             </div>
           </div>
-          
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <p><a href="https://www.linkedin.com/in/mohamed-lamine-traore-7a6a6b342" target="_blank" rel="noopener noreferrer">Voir mon profil professionnel</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/Mohamedtr02" target="_blank" rel="noopener noreferrer">Découvrir mes projets</a></p>
+            </div>
+          </div>
+
           <div class="contact-item">
             <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
@@ -1797,21 +1876,18 @@
           <h3>Portfolio</h3>
           <p>Entrepreneur & Étudiant en Cycle Ingénieur Sciences du Numérique passionné par l'innovation et la création de solutions impactantes.</p>
           <div class="social-links">
-            <a href="#" class="social-link">
-              <i class="fab fa-facebook-f"></i>
+            <a href="https://github.com/Mohamedtr02" class="social-link" target="_blank" rel="noopener noreferrer" title="Voir mes projets sur GitHub">
+              <i class="fab fa-github"></i>
             </a>
-            <a href="#" class="social-link">
-              <i class="fab fa-twitter"></i>
+            <a href="mailto:laminetr0275@gmail.com" class="social-link" title="Me contacter par email">
+              <i class="fas fa-envelope"></i>
             </a>
-            <a href="#" class="social-link">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="social-link">
+            <a href="https://www.linkedin.com/in/mohamed-lamine-traore-7a6a6b342" class="social-link" target="_blank" rel="noopener noreferrer" title="Connectez-vous avec moi sur LinkedIn">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>
-        
+
         <div class="footer-col">
           <h3>Liens rapides</h3>
           <ul class="footer-links">
@@ -1840,7 +1916,7 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     
@@ -2117,14 +2193,4 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-        }
-      });
-    }, observerOptions);
-    
-    document.querySelectorAll('.service-card, .portfolio-item, .timeline-content').forEach(el => {
-      observer.observe(el);
-    });
-  </script>
-</body>
-</html>
+          entry.t
